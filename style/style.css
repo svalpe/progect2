@@ -1,0 +1,263 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'roboto' , sans-serif
+}
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #6C6969;
+    background-image: url(../img/bg_header.png);
+    padding-top: 50px;
+    padding-bottom: 49px;
+}
+
+
+
+.nav{
+display: flex;
+justify-content: space-between;
+
+}
+
+.header_nav{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.header_nav:hover {
+    background-color: transparent;
+    color: #C7B299;
+}
+
+.header_nav:not(:last-of-type){
+    margin-right: 25px;
+    }
+
+.header_head{
+text-align: center;
+color: white;
+width: 570px;
+margin:0 auto;
+padding-top: 315px;
+
+
+}
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    color: #D3C1AC;
+    
+    }
+    
+    .slider_left{
+    margin-left: 161px;
+    font-size: 73px;
+    }
+    
+    .slider_right{
+    margin-right: 161px;
+   font-size: 73px;
+    }
+
+
+.header_head_mini{
+font-family: Ralleway;
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;
+}
+
+.header_head_big{
+    font-family: Ralleway;
+    font-weight: 600;
+font-size: 52px;
+line-height: 61px;
+}
+
+.header_text{
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.header_button{
+    width: 170px;
+    height: 53px;
+    background: #988574;
+    border-radius: 3px;
+    color: white;
+    margin-top: 40px;
+}
+
+.header_circle{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.circle_item{
+    flex-shrink: 0;
+    padding: 0;
+    display: block;
+    background-color:  rgba(255, 255, 255, 0.5);
+width: 10px;
+height: 10px;
+border-radius: 50px;
+cursor: pointer;
+}
+
+.circle_item:hover {
+    transform: scale(1.5);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.circle_item:not(:last-of-type){
+margin-right: 10px;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 90px;
+    padding-bottom: 88px;
+}
+
+
+
+.subtitle_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+}
+
+
+.subtitle_head{
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle_text{
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+   margin-bottom: 30px;
+}
+
+.subtitle_icon{
+    color: #555555;
+    font-size: xxx-large;
+ margin-bottom: 30px;
+}
+
+.subtitle_info::after {
+    bottom: 30px;
+    width: 70px;
+    height: 3px;
+    background-color: #F1EEE9;
+    content: '';
+}
+
+.subtitle_info:hover {
+  color: #C7B199;
+}
+
+.waxom{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   background-color: #E5E5E5;
+   padding-top: 80px;
+}
+.waxom_head{
+    font-weight: 600;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+color: #555555;
+margin-bottom: 20px;
+}
+
+.waxom_text{
+    font-family: Montserrat;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #8C8C8C;
+margin-bottom: 42px;
+
+}
+
+.waxom_img{
+    display: block;
+    width: 1232px;
+    display: flex;
+    align-self: center;
+}
+/*.subtitle_block{
+    width: 70px;
+    height: 3px;
+    background-color: #F1EEE9;
+}
+
+.subtitle_block:hover{
+background-color: #C7B199;} */
+
+.press{
+    background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+    padding-top: 44px;
+    padding-bottom: 45px;
+    color: white;
+}
+.press_info{
+display: flex;
+justify-content: space-between;
+}
+
+.press_head{
+    font-family: Raleway;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 8px;
+}
+.press_text{
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #615855;
+}
+.press_button{
+    font-family: Roboto;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    background-color: #988574;
+    width: 170px;
+height: 53px;
+    margin-top: 15px;
+}
+mark{
+   color: #C7B299;
+background-color: transparent;
+}
