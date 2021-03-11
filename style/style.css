@@ -37,6 +37,10 @@ padding-top: 50px;
     color: #FFFFFF;
 }
 
+.header_icon{
+    font-size: large;
+}
+
 .header_nav:hover {
     background-color: transparent;
     color: #C7B299;
@@ -203,8 +207,6 @@ background-color: #C7B199;;
     background-color: #F1EEE9;
 }
 
-
-
 .waxom{
 
    background-color: #E5E5E5;
@@ -316,22 +318,13 @@ padding-bottom: 33px;
     margin-top: 27px;
 }
 
-.select_type{
-    display: block;
-display: none;
-}
-
 .select_lable{
     display: inline-table;
     text-align: center;
 border: 1px solid #EBEBEB;
+background-color: #EBEBEB;
 padding: 5px;
-}
-
-.text_select{
-    display: block;
-
-    font-family: Montserrat;
+font-family: Montserrat;
 font-weight: 300;
 font-size: 14px;
 line-height: 17px;
@@ -339,30 +332,17 @@ text-align: center;
 color: #8C8C8C;
 }
 
-
-input[type="radio"]:checked+ span {
+.select_lable:checked {
+    
     background-color: #998575;
-    color: #FFFFFF;
-
+    color: white;
 }
 
-.select_lable:not(:last-of-type){
-    margin-right: 10px;
-}
-
-label:checked input{
-    background-color: #998575;
-    color: #FFFFFF;
-}
-input{
-    display: none;
-}
 
 .projects_img{
     margin-top: 70px;
     display: flex;
    justify-content: space-between;
-
 }
 
 .projects_img:nth-child(n+4){
@@ -556,8 +536,20 @@ font-size: xx-large;
 
 .recent{
     padding-top: 100px ;
-    padding-bottom: 114px;
+    padding-bottom: 38px;
 
+}
+
+.recent_item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent_post{
+    border: 1px solid #B2B2B2;
+    margin-top: 30px;
+    width: 370px;
+    padding-bottom: 30px;
 }
 
 .recent_header{
@@ -566,12 +558,17 @@ font-weight: 600;
 font-size: 30px;
 line-height: 35px;
 color: #555555;
+text-align: center;
 }
 
 .recent_text{
     font-family: Montserrat;
 line-height: 28px;
 color: #8C8C8C;
+margin: auto;
+padding-top: 20px;
+text-align: center;
+width: 770px;
 }
 
 .recent_post_header{
@@ -580,6 +577,8 @@ color: #8C8C8C;
     font-size: 20px;
     line-height: 23px;
     color: #555555;
+   margin-left: 30px;
+    margin-top: 30px;
 }
 
 .recent_post_text{
@@ -587,4 +586,277 @@ color: #8C8C8C;
 font-weight: 300;
 font-size: 14px;
 line-height: 22px;
+width: 311px;
+margin: auto;
+padding-top: 22px;
+padding-bottom: 20px;
+}
+
+.recent_more{
+text-decoration: none;
+font-family: Montserrat;
+font-size: 14px;
+line-height: 17px;
+color: #C7B299;
+margin-left: 30px;
+
+}
+
+.recent_icon{
+    color: #C7B299;
+
+}
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    color: #FFFFFF;
+    
+margin-left: 23px;
+margin-top: 17px;
+}
+
+.calendar_data{
+    background-color: #363636;
+   border-radius: 3px 3px 0px 0px;
+    font-family: Montserrat;
+font-weight: 300;
+font-size: 30px;
+line-height: 37px;
+width: 50px;
+height: 35px;
+}
+
+.calendar_month{
+    background-color: #242424;
+    border-radius: 0px 0px 3px 3px;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+    width: 50px;
+height: 25px;
+}
+
+.recent_post:hover .calendar_data{
+    background-color: #C7B199;
+}
+
+.recent_post:hover .calendar_month{
+    background-color: #A48D71;
+}
+
+.recent_post:hover {
+    background-color: #352F2D;
+}
+
+.recent_post:hover .recent_post_header,
+.recent.post:hover .recent_more,
+.recent_post:hover .recent_icon{
+    color: #C7B299;
+}
+
+.recent_post:hover .recent_post_text{
+    color: #FFFFFF;
+}
+
+.recent_navigation{
+    color: #d1d1d1;
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    font-size: 21px;
+}
+
+.recent_navigation_back{
+margin-right: 18px;
+}
+
+.recent_navigation_back:hover,
+.recent_navigation_go:hover {
+   color: #C7B299;
+}
+
+.footer_bg{
+    background-color: dimgrey;
+    width: 100%;
+    position: absolute;
+}
+
+.footer_bg_img{
+    display: block;
+    width: 100%;
+}
+
+.footer_label{
+position: relative;
+display: flex;
+justify-content: space-around;
+padding-top: 140px;
+padding-bottom: 140px;
+width: 100%;
+height: 100%;
+}
+
+.footer{
+    background-color: #191919;
+    color: #fff;
+}
+
+.footer_info{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 128px;
+}
+
+.footer_logo{
+    margin-right: 72px;
+    width: 270px;
+}
+
+.text_info{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.footer_post{
+    margin-right: 50px;
+    width: 270px;
+}
+
+.text_post{
+    margin-top: 6px;
+}
+
+.footer_more{
+    text-decoration: none;
+    font-family: Montserrat;
+font-size: 14px;
+line-height: 17px;
+color: #D1D1D1;
+}
+
+.footer_twitter{
+    margin-right: 50px;
+    width: 270px;
+}
+
+.text_twtr{
+    margin-bottom: 6px;
+}
+
+.footer_widget{
+width: 270px;
+}
+
+.footer_heading{
+    font-family: Raleway;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+margin-bottom: 23px;
+}
+
+.footer_post_text_mini{
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;    
+}
+
+.footer_post_header_mini{
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #363636;
+}
+
+
+.img_ftr{
+margin: 9px;
+}
+
+.footer_picture{
+    display: flex;
+   
+}
+
+/*.footer_picture:nth-child(n+3){
+    flex-wrap: wrap;
+} */
+
+
+
+.footer_copi{
+    background-color: #101010;
+    padding-top: 58px;
+    padding-bottom: 41px;
+}
+
+.footer_mark{
+   color: #00BFF3;
+}
+
+.footer_link{
+    color: #757575;
+}
+
+.footer_copi_link{
+    text-decoration: none;
+    font-family: Montserrat;
+font-weight: 300;
+font-size: 13px;
+line-height: 16px;
+color: #555555;
+
+}
+
+.footer_copi_link:not(:last-child){
+    border-right: #242424 1px solid;
+    margin-right: 13px;
+    padding-right: 11px;
+}
+
+.footer_copi_link:hover{
+    color: #BAA78F;
+}
+
+.footer_post_data{
+    padding-bottom: 12px; 
+    padding-top: 12px;
+}
+
+.footer_post_data:not(:last-child){
+    border-bottom: #242424 1px solid;
+    content: ""; 
+}
+
+.footer_post_data:hover .footer_post_header_mini{
+    color: white;
+    }
+    
+    .footer_post_data:hover .footer_post_text_mini{
+        color: #C7B299;
+    }
+
+.footer_twitter_info{
+    padding-bottom: 12px; 
+    padding-top: 12px;
+}
+
+.footer_twitter_info:not(:last-child){
+    border-bottom: #242424 1px solid;
+    content: "";  
+}
+
+.footer_twitter_info:hover .footer_post_header_mini{
+color: white;
+}
+
+.footer_twitter_info:hover .footer_post_text_mini{
+    color: #C7B299;
 }
